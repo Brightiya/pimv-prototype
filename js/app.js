@@ -14,37 +14,52 @@ const right = document.getElementById('rightPane');
 // Build left pane (controls)
 left.innerHTML = `
   <label>Connected identity</label>
-  <div style="display:flex;gap:8px"><input id="wallet" placeholder="0xAAA111" /><button id="connectBtn">Connect</button></div>
+  <div style="display:flex;gap:8px">
+    <input id="wallet" placeholder="0xAAA111" />
+    <button id="connectBtn" class="btn">Connect</button>
+  </div>
   <div class="muted small">DID: <span id="didDisplay">—</span></div>
+
   <hr/>
-  <label>Personal details (saved to current context)</label>
+  <label>Personal details (saved to context)</label>
   <input id="firstName" placeholder="First name" />
   <input id="surname" placeholder="Surname" />
   <input id="age" placeholder="Age" type="number" />
-  <select id="gender"><option value="">Gender</option><option>Male</option><option>Female</option><option>Other</option><option>Prefer not to say</option></select>
-  <button id="saveBio" class="btn-secondary">Save to context</button>
+  <select id="gender">
+    <option value="">Gender</option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+    <option>Prefer not to say</option>
+  </select>
+  <button id="saveBio" class="btn-secondary">Save personal data</button>
+
   <hr/>
   <label>Contexts</label>
   <div id="contextList"></div>
-  <input id="newContextInput" placeholder="custom context id (e.g.,health)" />
-  <button id="addContext" class="btn-secondary">Add context</button>
+  <input id="newContextInput" placeholder="custom context id (e.g., health)" />
+  <button id="addContext" class="btn-secondary">Add new context</button>
+
   <hr/>
-  <label>Add attribute (key/value)</label>
+  <label>Add attribute</label>
   <input id="attrKey" placeholder="attribute (e.g., nationality)" />
   <input id="attrVal" placeholder="value (e.g., British)" />
   <button id="addAttr" class="btn-ghost">Add attribute</button>
+
   <hr/>
+  <label>Evaluation & GDPR tools</label>
   <div class="controls">
     <button id="consentBtn" class="btn-ghost">Simulate Consent Request</button>
-    <button id="eraseBtn" class="btn-danger">Request GDPR Erasure</button>
-    <button id="benchBtn" class="btn" style="background:#805ad5">Run 10× Erasure Benchmark</button>
+    <button id="eraseBtn" class="btn-danger">GDPR Erasure Request</button>
+    <button id="benchBtn" class="btn" style="background:#805ad5">Run Erasure Benchmark ×10</button>
     <button id="issueVcBtn" class="btn-secondary">Issue VC (simulate)</button>
-    <button onclick="window.location.href='https://forms.gle/Np6TWNWkjjeAbEcQA'" class="btn">
-    Take SUS Questionnaire
-</button>
 
+    <button class="btn" onclick="window.open('https://forms.gle/Np6TWNWkjjeAbEcQA','_blank')">
+      Take SUS Questionnaire
+    </button>
   </div>
 `;
+
 
 // Build main pane (profile view)
 main.innerHTML = `

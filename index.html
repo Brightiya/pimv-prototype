@@ -15,6 +15,21 @@
   </div>
 </header>
 
+<div class="card" style="margin-bottom:20px;padding:20px">
+  <h2 style="margin-top:0">Welcome to the PIMV Evaluation Prototype</h2>
+  <p>
+    This demo shows how the Privacy Identity & Management Vault (PIMV) handles
+    identity contexts, consent, GDPR erasure, and verifiable credentials.
+  </p>
+  <p class="muted small">
+    Please explore the prototype, then complete the usability evaluation survey.
+  </p>
+  <button onclick="window.open('https://forms.gle/Np6TWNWkjjeAbEcQA','_blank')" class="btn">
+    Go to SUS Evaluation Form
+  </button>
+</div>
+
+
 <div class="layout">
   <aside class="card" id="leftPane"></aside>
 
@@ -25,6 +40,22 @@
 
 <!-- Consent modal container -->
 <div id="modalRoot"></div>
+
+
+<!-- Research Footer -->
+<footer>
+    <div class="title">Research Prototype Notice</div>
+    <p>
+        This PIMV system is an academic research prototype created for evaluation and usability testing.  
+        No real personal data is collected, stored, or transmitted.  
+        All data remains locally in your browser and is erased on refresh.
+    </p>
+    <p>
+        For questions or participation details, please contact the researcher.  
+        University ethics guidelines apply.
+    </p>
+</footer>
+
 
 <script type="module" src="js/app.js"></script>
 </body>

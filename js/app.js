@@ -39,7 +39,7 @@ left.innerHTML = `
     <button id="eraseBtn" class="btn-danger">Request GDPR Erasure</button>
     <button id="benchBtn" class="btn" style="background:#805ad5">Run 10× Erasure Benchmark</button>
     <button id="issueVcBtn" class="btn-secondary">Issue VC (simulate)</button>
-    <button onclick="window.location.href='sus.html'" class="btn">
+    <button onclick="window.location.href='https://forms.gle/Np6TWNWkjjeAbEcQA' class="btn">
     Take SUS Questionnaire
 </button>
 

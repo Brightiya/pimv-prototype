@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PIMV — Modular Prototype</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="logo">PIMV</div>
+  <div>
+    <h1>Privacy Identity & Management Vault — Prototype</h1>
+    <div class="muted">Modular demo: contexts, consent, GDPR erase, VC issuance</div>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="card" id="leftPane"></aside>
+
+  <main class="card" id="mainPane"></main>
+
+  <aside class="card" id="rightPane"></aside>
+</div>
+
+<!-- Consent modal container -->
+<div id="modalRoot"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

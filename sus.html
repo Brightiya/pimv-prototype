@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SUS Questionnaire</title>
+    <link rel="stylesheet" href="/css/sus.css">
+</head>
+<body>
+
+<div class="sus-container">
+    <h1>System Usability Scale (SUS)</h1>
+
+    <form id="susForm">
+        <p>Please rate the following statements:</p>
+
+        <div id="susQuestions"></div>
+
+        <button type="submit" class="btn-submit">Submit Responses</button>
+    </form>
+
+    <div id="susResult" class="result hidden">
+        <h2>Your SUS Score</h2>
+        <p id="susScore"></p>
+        <button onclick="window.location.href='index.html'" class="btn-back">Return to Prototype</button>
+    </div>
+</div>
+
+<script src="js/sus.js"></script>
+</body>
+</html>

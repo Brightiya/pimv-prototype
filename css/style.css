@@ -1,0 +1,28 @@
+:root{
+  --bg:#f6f8fb; --card:#fff; --accent:#2b6cb0; --muted:#6b7280; --danger:#c53030; --success:#2f855a;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:#0f172a;margin:0;padding:20px}
+.header{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#2b6cb0,#63b3ed);display:flex;align-items:center;justify-content:center;color:white;font-weight:800}
+h1{font-size:18px;margin:0}
+.muted{color:var(--muted);font-size:13px}
+.layout{display:grid;grid-template-columns:360px 1fr 320px;gap:18px}
+.card{background:var(--card);border-radius:10px;padding:16px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+label{font-weight:600;color:#0f172a;display:block;margin-bottom:8px;font-size:13px}
+input[type="text"], input[type="number"], select, textarea{width:100%;padding:8px;border-radius:8px;border:1px solid #e6eef9;background:#fbfdff;margin-bottom:8px}
+button{cursor:pointer;border:0;border-radius:8px;padding:8px 12px;background:var(--accent);color:#fff;font-weight:600}
+.btn-secondary{background:#e6eef9;color:var(--accent);border:1px solid rgba(43,108,176,0.08)}
+.btn-ghost{background:transparent;color:var(--accent);border:1px solid rgba(43,108,176,0.12)}
+.btn-danger{background:var(--danger);color:#fff}
+.context-pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef6ff;color:var(--accent);font-weight:700;margin-right:8px}
+.profile-attr{display:flex;justify-content:space-between;padding:10px 12px;border-radius:8px;background:#fbfdff;margin-bottom:8px;align-items:center}
+.small{font-size:13px;color:var(--muted)}
+.log{height:220px;overflow:auto;background:#0b1220;color:#dbeafe;padding:12px;border-radius:8px;font-family:monospace;font-size:13px}
+.kv{display:flex;gap:8px;align-items:center}
+.attr-key{font-weight:700}
+.controls{display:flex;flex-direction:column;gap:8px}
+.actions{display:flex;gap:8px;margin-top:8px}
+.modal-backdrop{position:fixed;inset:0;background:rgba(6,8,12,0.4);display:none;align-items:center;justify-content:center;z-index:50}
+.modal{width:640px;background:var(--card);padding:18px;border-radius:12px;box-shadow:0 16px 60px rgba(2,6,23,0.4)}
+@media (max-width:1000px){ .layout{grid-template-columns:1fr} }
